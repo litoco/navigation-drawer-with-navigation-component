@@ -91,6 +91,8 @@
                         .setOpenableLayout(drawerLayout)
                         .build();
   NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration);
+  NavigationView navView = findViewById(R.id.nav_view);
+  NavigationUI.setupWithNavController(navView, navController);
   }
 
   @Override
@@ -103,3 +105,44 @@
   **NavHostFragment:** It is used to show the corresponding destination fragment's UI, that the user has navigated to.\
   **NavController:** Responsible for updating the navhostfragment with the new fragment, that the user has navigated to.\
   **AppBarConfiguration:** It is used to manage the behaviour of the navigation icon (hamburger icon). Top level destinations show hamburger icon while child level destination show back arrow.
+
+**8. Add navigation menu and tie menu item with their destinations:**
+  Create a file for navigation drawer menu. (Lets say drawer_menu.xml)
+  add items to the drawer menu:
+  ```
+  <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item1"
+        android:title="Item1"/>
+    <item android:id="@+id/item2"
+        android:title="Item2"/>
+    ...
+    ...
+    ...
+  </menu>
+  ```
+  ***Note:It is abosolutely necessary that the id mentioned here are same as mentioned in the "nav_graph" that we created in step 4***\
+  For example:
+  ```
+  <menu ...>
+    <item android:id="@+id/item1"
+        .../>
+    ...
+    ...
+    ...
+  </menu>
+  ```
+  ```
+  <navigation
+   ...
+   ...
+   ...>
+    <fragment
+        android:id="@+id/item1"
+        ...
+        ...
+        .../>    
+   </navigation>
+  ```
+
+**9. Run the app on a device. **\
+**10. `Congratulations!!!` You have successfully added navigation drawer to your app**
