@@ -120,7 +120,7 @@
     ...
   </menu>
   ```
-  ***Note:It is abosolutely necessary that the id mentioned here are same as mentioned in the "nav_graph" that we created in step 4***\
+  >Note:It is abosolutely necessary that the id mentioned here are same as mentioned in the "nav_graph" that we created in step 4\
   For example:
   ```
   <menu ...>
