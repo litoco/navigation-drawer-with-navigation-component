@@ -4,9 +4,9 @@
 **None (just follow along with this documentation)**
 
 # Steps:
-**1. Create an empty android repository**
+**1. Create an empty android repository**\
 
-**2. Add dependencies:**
+**2. Add dependencies:**\
   In the app level build.gradle file, add the following dependencies:
   ```
   def nav_version = "<latest navigation component version>"
@@ -15,11 +15,11 @@
   ```
   [latest navigation component's version can be found here](https://developer.android.com/jetpack/androidx/releases/navigation)
  
-**3. Create fragments:**
+**3. Create fragments:**\
   Create fragments for different screens of your application.\
   To add new fragment go to `File(right click)>new>Fragment>BlankFragment`.
   
-**4. Add fragments to navigation graph:**
+**4. Add fragments to navigation graph:**\
   Add these fragments [navigation graph](https://developer.android.com/jetpack/androidx/releases/navigation).\
   To add a navigation graph to your project, do the following:\
   i. &nbsp;&nbsp;In the Project window, right-click on the res directory and select `New > Android Resource File`. \
@@ -34,10 +34,10 @@
   iii. In the code window of navigation graph change the `android:label` of `<fragment>` to what you want to be displayed on the 
   &nbsp;&nbsp;&nbsp;&nbsp;toolbar
   
-**5. Remove the default action bar:**
+**5. Remove the default action bar:**\
   Default action bar can be found in `res>values>style` or `res>values>themes>both files here` change (Dark/Light)ActionBar to NoActionBar
   
-**6. Add navigation UI and toolbar in xml:**
+**6. Add navigation UI and toolbar in xml:**\
   It must follow the following standard:
   ```
   <androidx.drawerlayout.widget.DrawerLayout
@@ -77,7 +77,7 @@
    </androidx.drawerlayout.widget.DrawerLayout>
   ```
   
-**7. Add navigation UI and toolbar in Java:**
+**7. Add navigation UI and toolbar in Java:**\
   Create global Objects of AppBarConfiguration, NavController, DrawerLayout
   ```
   public void onCreate(Bundle saveInstanceState){
@@ -106,7 +106,7 @@
   **NavController:** Responsible for updating the navhostfragment with the new fragment, that the user has navigated to.\
   **AppBarConfiguration:** It is used to manage the behaviour of the navigation icon (hamburger icon). Top level destinations show hamburger icon while child level destination show back arrow.
 
-**8. Add navigation menu and tie menu item with their destinations:**
+**8. Add navigation menu and tie menu item with their destinations:**\
   Create a file for navigation drawer menu. (Lets say drawer_menu.xml)
   add items to the drawer menu:
   ```
@@ -120,7 +120,7 @@
     ...
   </menu>
   ```
-  >Note:It is abosolutely necessary that the id mentioned here are same as mentioned in the "nav_graph" that we created in step 4\
+  >Note:It is abosolutely necessary that the id mentioned here are same as mentioned in the "nav_graph" that we created in step 4/\
   For example:
   ```
   <menu ...>
