@@ -144,5 +144,5 @@
    </navigation>
   ```
 
-**9. Run the app on a device. **\
+**9. Run the app on a device.**\
 **10. `Congratulations!!!` You have successfully added navigation drawer to your app**
