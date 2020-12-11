@@ -4,7 +4,7 @@
 **None (just follow along with this documentation)**
 
 # Steps:
-**1. Create an empty android repository**\
+**1. Create an empty android studio project**
 
 **2. Add dependencies:**\
   In the app level build.gradle file, add the following dependencies:
